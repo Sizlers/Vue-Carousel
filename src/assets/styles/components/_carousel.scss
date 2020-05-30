@@ -1,0 +1,43 @@
+.carousel-container {
+    position: relative;
+    .carousel {
+        display: flex;
+        overflow-x: hidden;
+        margin-left: -10px;
+        margin-right: -10px;
+        @include desktop {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+    .carousel-button {
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        outline:0;
+        font-size: 20px;
+        color: $distblue;
+        background-color: $bggrey;
+        &--prev {
+            left: -30px;
+            @include tablet {
+                left: -50px;
+            }
+            @include desktop {
+                left: -40px;
+            }
+        }
+        &--next {
+            right: -30px;
+            @include tablet {
+                right: -50px;
+            }
+            @include desktop {
+                right: -40px;
+            }
+        }
+    }
+}
+

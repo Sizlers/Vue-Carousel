@@ -1,0 +1,19 @@
+.button {
+    color: #FFF;
+    background-color: $darkgrey;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 17px;
+    font-size: 12px;
+    cursor: pointer;
+    outline:0;
+    &:hover {
+        background-color: darken($darkgrey, 5);
+    }
+    &--blue {
+        background-color: $distblue;
+        &:hover {
+            background-color: darken($distblue, 5);
+        }
+    }
+}

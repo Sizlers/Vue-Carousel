@@ -1,0 +1,19 @@
+$small-width: 400px;
+$tablet-width: 600px;
+$desktop-width: 960px;
+
+@mixin large-phone {
+  @media (min-width: #{$small-width}) {
+      @content;
+  }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }

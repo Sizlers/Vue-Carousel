@@ -1,0 +1,28 @@
+* {
+    font-family: "Myriad Pro",Helvetica,Arial,sans-serif;  
+}
+.header-three {
+    line-height: 1.5rem;
+    color: #000;
+    font-weight: 400;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $bggrey;
+}
+
+.container {
+    
+    display: block;
+    width: 85%;
+    max-width: 880px;
+    @include desktop {
+        width: 95%;
+    }
+    @include desktop {
+        width: 100%;
+    }
+}

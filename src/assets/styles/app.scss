@@ -1,0 +1,8 @@
+// import setups
+@import "./setup/mixins";
+@import "./setup/variables";
+// import basic
+@import "./basic/buttons";
+// components
+@import "./components/carousel";
+@import "./components/carousel/carousel-item";
