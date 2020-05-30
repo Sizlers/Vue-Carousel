@@ -1,4 +1,4 @@
-# distrelec-frontend-test
+# Vue Carousel
 
 ## Project setup
 ```
