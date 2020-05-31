@@ -2,18 +2,24 @@
   <section class="container">
     <div id="app">
       <h3 class="header-three">Related products</h3>
-      <Carousel />
+      <Carousel :data="carouselData.carouselData" />
     </div>
   </section>
 </template>
+
 <script>
-  import Carousel from './components/Carousel.vue'
-  // here be import for Myriad font if had licence (chosen as used on distrelec website) 
+  import Carousel from './components/Carousel.vue';
+  import carouselData from './data.json';
 
   export default {
     name: 'App',
     components: {
       Carousel
+    },
+    data() {
+      return {
+          carouselData
+      }
     }
   }
 </script>
