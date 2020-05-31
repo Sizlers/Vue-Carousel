@@ -1,13 +1,16 @@
 .carousel-container {
     position: relative;
-    .carousel {
-        display: flex;
+    .carousel-track {
         overflow-x: hidden;
-        margin-left: -10px;
-        margin-right: -10px;
-        @include desktop {
+        .carousel {
+            display: flex;
+            // overflow-x: hidden;
             margin-left: -10px;
             margin-right: -10px;
+            @include desktop {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
         }
     }
     .carousel-button {

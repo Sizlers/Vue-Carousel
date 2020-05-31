@@ -8,6 +8,7 @@
     flex: none;
     box-sizing: border-box;
     width: calc(100% - 20px);
+    position: relative;
     @include large-phone {
         width: calc(100%/2 - 20px);
     }
@@ -29,12 +30,17 @@
         width: 100%;
         max-width: 330px;
     }
+    &__header-container {
+        height: 50px;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+    }
     &__title {
         font-size: 14px;
         color: $distblue;
         text-decoration: none;
         line-height: 1.2;
-        margin: 25px 0 10px;
     }
     &__stock {
         font-size: 12px;
@@ -45,4 +51,19 @@
         color: $darkgrey;
         font-weight: 700;
     }
+}
+.carousel-item__transition-prev {
+    animation: carousel-slide-prev 500ms normal forwards ease-in-out;
+}
+.carousel-item__transition-next {
+    animation: carousel-slide-next 500ms normal forwards ease-in-out;
+    will-change: transform;
+}
+@keyframes carousel-slide-prev {
+    from {transform: translateX(0);}
+    to {transform: translateX(-225px);}
+}
+@keyframes carousel-slide-next {
+    from {transform: translateX(-225px);}
+    to {transform: translateX(0);}
 }
