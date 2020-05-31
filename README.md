@@ -1,5 +1,7 @@
 # Vue Carousel
 
+[See demo here](https://sizlers.github.io/Vue-Carousel/)
+
 ## Project setup
 ```
 npm install
