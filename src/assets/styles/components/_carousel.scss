@@ -24,6 +24,7 @@
         color: $distblue;
         background-color: $bggrey;
         &--prev {
+            padding: 20px 0px;
             left: -30px;
             @include tablet {
                 left: -50px;
@@ -33,6 +34,7 @@
             }
         }
         &--next {
+            padding: 20px 0px;
             right: -30px;
             @include tablet {
                 right: -50px;
